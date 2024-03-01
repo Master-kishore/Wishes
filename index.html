@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title> Birthday </title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+<div class="border">
+    <div class="wrapper">
+        <div class="wish">
+           <video id="myvideo" src="video/bg 2.mp4" muted loop></video>
+           <h2> Happy Birthday </h2>
+           <h4> Amritha </h4>
+           <buton id="mybtn" onclick="myFunction()"> Suprise </buton>
+        </div>
+    </div>
+</div>
+    <script>
+        var video = document.getElementById("myvideo");
+        var btn = document.getElementById("mybtn");
+        
+        function myFunction(){
+            if (video.paused){
+                video.play();
+                btn.innerHTML = "Suprise";
+            } else{
+                video.pause();
+                btn.innerHTML = "Stop";
+            }
+
+        }
+       
+    </script>
+</body>
+</html>
